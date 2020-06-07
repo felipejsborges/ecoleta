@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Feather as Icon } from '@expo/vector-icons';
 import {
   View,
@@ -6,23 +6,82 @@ import {
   StyleSheet,
   Text,
   ImageBackground,
-  TextInput,
   KeyboardAvoidingView,
   Platform,
+  Alert,
+  Picker,
 } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
+import axios from 'axios';
+
+interface IBGEUFResponse {
+  sigla: string;
+}
+
+interface IBGECityResponse {
+  nome: string;
+}
 
 const Home: React.FC = () => {
-  const [uf, setUf] = useState('');
-  const [city, setCity] = useState('');
+  const [ufs, setUfs] = useState<string[]>([]);
+  const [cities, setCities] = useState<string[]>([]);
+
+  const [selectedUf, setSelectedUf] = useState('Selecione uma UF');
+  const [selectedCity, setSelectedCity] = useState('Selecione uma cidade');
 
   const navigation = useNavigation();
 
+  // getting UF from IBGE API
+  useEffect(() => {
+    axios
+      .get<IBGEUFResponse[]>(
+        'https://servicodados.ibge.gov.br/api/v1/localidades/estados',
+      )
+      .then((response) => {
+        const ufInitials = response.data.map((uf) => uf.sigla);
+        setUfs(ufInitials);
+      });
+  }, []);
+
+  // getting city from IBGE API
+  useEffect(() => {
+    if (selectedUf === 'Selecione uma UF') {
+      return;
+    }
+
+    axios
+      .get<IBGECityResponse[]>(
+        `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${selectedUf}/municipios`,
+      )
+      .then((response) => {
+        const cityNames = response.data.map((city) => city.nome);
+        setCities(cityNames);
+      });
+  }, [selectedUf]);
+
+  function handleSelectUf(itemValue: string): void {
+    setSelectedUf(itemValue);
+  }
+
+  function handleSelectCity(itemValue: string): void {
+    setSelectedCity(itemValue);
+  }
+
   function handleNavigateToPoints(): void {
+    if (selectedUf === 'Selecione uma UF') {
+      Alert.alert('Insira um estado');
+      return;
+    }
+
+    if (selectedCity === 'Selecione uma cidade') {
+      Alert.alert('Insira uma cidade');
+      return;
+    }
+
     navigation.navigate('Points', {
-      uf,
-      city,
+      uf: selectedUf,
+      city: selectedCity,
     });
   }
 
@@ -45,14 +104,13 @@ const Home: React.FC = () => {
             </Text>
 
             <Text style={styles.description}>
-              Ajudamos pessoas a encotrarem produtos de coleta de forma
-              eficiente
+              Ajudamos pessoas a encotrarem pontos de coleta de forma eficiente
             </Text>
           </View>
         </View>
 
         <View style={styles.footer}>
-          <TextInput
+          {/* <TextInput
             style={styles.input}
             placeholder="Digite a UF"
             value={uf}
@@ -68,7 +126,32 @@ const Home: React.FC = () => {
             value={city}
             autoCorrect={false}
             onChangeText={setCity}
-          />
+          /> */}
+
+          <Picker
+            style={styles.input}
+            selectedValue={selectedUf}
+            onValueChange={handleSelectUf}
+          >
+            <Picker.Item label="Selecione uma UF" value="Selecione uma UF" />
+            {ufs.map((uf) => (
+              <Picker.Item key={uf} label={uf} value={uf} />
+            ))}
+          </Picker>
+
+          <Picker
+            style={styles.input}
+            selectedValue={selectedCity}
+            onValueChange={(itemValue) => handleSelectCity(itemValue)}
+          >
+            <Picker.Item
+              label="Selecione uma cidade"
+              value="Selecione uma cidade"
+            />
+            {cities.map((city) => (
+              <Picker.Item key={city} label={city} value={city} />
+            ))}
+          </Picker>
 
           <RectButton style={styles.button} onPress={handleNavigateToPoints}>
             <View style={styles.buttonIcon}>

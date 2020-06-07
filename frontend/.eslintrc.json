@@ -40,6 +40,11 @@
       "jsx-a11y/no-noninteractive-element-interactions": "off",
       "jsx-a11y/label-has-for": "off",
       "jsx-a11y/label-has-associated-control": "off",
+      "no-nested-ternary": "off",
+      "react/jsx-props-no-spreading": "off",
+      "react/prop-types": "off",
+      "no-alert": "off",
+      "no-plusplus": "off",
       "@typescript-eslint/explicit-function-return-type": [
         "error",
         {

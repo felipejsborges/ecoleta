@@ -10,7 +10,6 @@ import './styles.css';
 import logo from '../assets/logo.svg';
 import Dropzone from '../../components/Dropzone';
 
-
 interface Item {
   id: number;
   title: string;
@@ -40,9 +39,10 @@ const CreatePoint: React.FC = () => {
   const [selectedFile, setSelectedFile] = useState<File>();
 
   const [initialPosition, setInitialPosition] = useState<[number, number]>([
-    0,
-    0,
+    -23.1848224,
+    -45.8868207,
   ]);
+
   const [selectedPosition, setSelectedPosition] = useState<[number, number]>([
     0,
     0,
@@ -54,12 +54,14 @@ const CreatePoint: React.FC = () => {
     whatsapp: '',
   });
 
+  // getting items from API
   useEffect(() => {
     api.get('items').then((response) => {
       setItems(response.data);
     });
   }, []);
 
+  // getting UF from IBGE API
   useEffect(() => {
     axios
       .get<IBGEUFResponse[]>(
@@ -71,6 +73,7 @@ const CreatePoint: React.FC = () => {
       });
   }, []);
 
+  // getting city from IBGE API
   useEffect(() => {
     if (selectedUf === '0') {
       return;
@@ -86,6 +89,7 @@ const CreatePoint: React.FC = () => {
       });
   }, [selectedUf]);
 
+  // setting initial position
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {
       const { latitude, longitude } = position.coords;
@@ -158,7 +162,9 @@ const CreatePoint: React.FC = () => {
     <div id="page-create-point">
       <div className="content">
         <header>
-          <img src={logo} alt="Ecoleta" />
+          <Link to="/">
+            <img src={logo} alt="Ecoleta" />
+          </Link>
           <Link to="/">
             <FiArrowLeft />
             Voltar para Home
@@ -182,6 +188,7 @@ const CreatePoint: React.FC = () => {
               <label htmlFor="name">Nome da entidade</label>
               <input
                 type="text"
+                placeholder="Insira o nome da entidade"
                 name="name"
                 id="name"
                 onChange={handleInputChange}
@@ -193,6 +200,7 @@ const CreatePoint: React.FC = () => {
                 <label htmlFor="email">E-mail</label>
                 <input
                   type="email"
+                  placeholder="Insira o e-mail da entidade"
                   name="email"
                   id="email"
                   onChange={handleInputChange}
@@ -204,6 +212,9 @@ const CreatePoint: React.FC = () => {
               <label htmlFor="whatsapp">WhatsApp</label>
               <input
                 type="text"
+                placeholder="(00) 0 0000 0000"
+                maxLength={11}
+                minLength={10}
                 name="whatsapp"
                 id="whatsapp"
                 onChange={handleInputChange}

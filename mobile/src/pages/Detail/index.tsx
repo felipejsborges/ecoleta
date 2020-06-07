@@ -45,7 +45,7 @@ const Detail: React.FC = () => {
     api.get(`points/${routeParams.point_id}`).then((response) => {
       setData(response.data);
     });
-  }, []);
+  }, [routeParams.point_id]);
 
   if (!data.point) {
     return null;
@@ -57,7 +57,7 @@ const Detail: React.FC = () => {
 
   function handleWhatsapp(): void {
     Linking.openURL(
-      `whatsapp://send?phone=${data.point.whatsapp}&text=Tenho interesse sobre coleta de resíduos`,
+      `whatsapp://send?phone=+55${data.point.whatsapp}&text=Tenho interesse sobre coleta de resíduos`,
     );
   }
 
@@ -75,7 +75,10 @@ const Detail: React.FC = () => {
           <Icon name="arrow-left" size={20} color="#34CB79" />
         </TouchableOpacity>
 
-        <Image style={styles.pointImage} source={{ uri: data.point.image_url }} />
+        <Image
+          style={styles.pointImage}
+          source={{ uri: data.point.image_url }}
+        />
 
         <Text style={styles.pointName}>{data.point.name}</Text>
 

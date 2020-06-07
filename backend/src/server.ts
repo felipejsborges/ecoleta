@@ -7,13 +7,13 @@ import routes from './routes';
 
 const app = express();
 
-app.use(cors());
-app.use(express.json());
+app.use(cors()); // frontend can access this API
+app.use(express.json()); // using json on this server
 app.use(routes);
 app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
-app.use(errors());
+app.use(errors()); // validation (celebrate) errors
 
 // insert the port that backend is going to run
 const port = 3333;
 app.listen(port);
-console.log(`Server running on port ${port} 📡`)
+console.log(`Server running on port ${port} 📡`);

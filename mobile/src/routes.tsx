@@ -8,7 +8,7 @@ import Detail from './pages/Detail';
 
 const AppStack = createStackNavigator();
 
-const Routes = () => {
+const Routes: React.FC = () => {
   return (
     <NavigationContainer>
       <AppStack.Navigator
@@ -16,7 +16,7 @@ const Routes = () => {
         screenOptions={{
           cardStyle: {
             backgroundColor: '#f0f0f5',
-          }
+          },
         }}
       >
         <AppStack.Screen name="Home" component={Home} />
@@ -26,7 +26,7 @@ const Routes = () => {
         <AppStack.Screen name="Detail" component={Detail} />
       </AppStack.Navigator>
     </NavigationContainer>
-  )
-}
+  );
+};
 
 export default Routes;

@@ -51,6 +51,7 @@ const Points: React.FC = () => {
 
   const routeParams = route.params as Params;
 
+  // getting position from user phone
   useEffect(() => {
     async function loadPosition(): Promise<void> {
       const { status } = await Location.requestPermissionsAsync();
@@ -69,12 +70,14 @@ const Points: React.FC = () => {
     loadPosition();
   }, []);
 
+  // getting items from API
   useEffect(() => {
     api.get('items').then((response) => {
       setItems(response.data);
     });
   }, []);
 
+  // getting points from API
   useEffect(() => {
     api
       .get('points', {
@@ -87,7 +90,7 @@ const Points: React.FC = () => {
       .then((response) => {
         setPoints(response.data);
       });
-  }, [selectedItems]);
+  }, [selectedItems, routeParams.city, routeParams.uf]);
 
   function handleNavigateBack(): void {
     navigation.goBack();

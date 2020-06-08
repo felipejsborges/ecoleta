@@ -20,19 +20,20 @@
 
 Intro text
 
-<hr>
-
-## API
-[Back to sumary](#sumary)
 ### Language
 - [TypeScript](https://www.typescriptlang.org/docs/home.html)
 
-### Main framework
+### Main Technologies
 - [Node.js](https://nodejs.org/en/docs/)
+- [ReactJS](https://reactjs.org/docs/getting-started.html)
+- [React Native](https://reactnative.dev/docs/getting-started)
+- [Expo](https://docs.expo.io/)
+
+<hr>
+
+## API
 
 ### Libs
-- [celebrate]()
-- [cors]()
 - [express]()
 - [knex]()
 - [sqlite3]()
@@ -40,17 +41,25 @@ Intro text
 ### Routes
 
 ### How to run it on your computer
-- Clone this repo
-- Go to backend folder -> `cd backend`
-- On terminal, execute the command as follows:
 ```
-npm install
-npm run knex:migrate
-npm run knex:seed
-```
-- Change to your computer's IP on `backend/ItemsController` and on `backend/PointsController`
-- Finally, run the server -> `npm run dev`
+# clone this repo
+$ git clone https://github.com/felipejsborges/ecoleta.git
 
+# go to backend folder
+$ cd backend
+
+# install dependencies
+$ npm install
+
+# run migrations and seed
+$ npm run knex:migrate
+$ npm run knex:seed
+
+# Change to your computer's IP on files ItemsController and PointsController on `backend/src/controllers/`
+
+# run the server
+$ npm run dev
+```
 <hr>
 
 ## Website
@@ -59,25 +68,27 @@ npm run knex:seed
 #### Home
 #### Create Point
 
-### Language
-- [TypeScript](https://www.typescriptlang.org/docs/home.html)
-
-### Main framework
-- [ReactJS](https://reactjs.org/docs/getting-started.html)
-
 ### Libs
 - [axios]()
 - [react-leaflet]()
-- [react-dom]()
 - [react-router-dom]()
-- [react-dropzone]()
-- [react-icons]()
 
 ### How to run it on your computer
-- Clone this repo
-- Go to frontend folder -> `cd frontend`
-- Install dependencies -> `npm install`
-- Run the server -> `npm run start`
+```
+# clone this repo
+$ git clone https://github.com/felipejsborges/ecoleta.git
+
+# go to frontend folder
+$ cd frontend
+
+# install dependencies
+$ npm install
+
+# Change to your computer's IP on mobile/src/services/api.ts
+
+# run the website
+$ npm run start
+```
 <hr>
 
 ## Mobile app
@@ -87,28 +98,26 @@ npm run knex:seed
 ####  Points
 ####  Detail
 
-### Language
-- [TypeScript](https://www.typescriptlang.org/docs/home.html)
-
-### Main frameworks
-- [React Native](https://reactnative.dev/docs/getting-started)
-- [Expo](https://docs.expo.io/)
-
 ### Libs
- - [react-navigation]()
- - [axios]()
- - [expo-location]()
- - [expo-mail-composer]()
- - [react-native-gesture-handler]()
+ - [react-navigation]() 
  - [react-native-maps]()
 
 ### How to run it on your computer
-- Clone this repo
-- Go to frontend folder -> `cd mobile`
-- Install dependencies -> `npm install`
-- Change to your computer's IP on `mobile/src/services/api.ts`
-- Run the server -> `npm run start`
+```
+# clone this repo
+$ git clone https://github.com/felipejsborges/ecoleta.git
 
+# go to mobile folder
+$ cd mobile
+
+# install dependencies
+$ npm install
+
+# Change to your computer's IP on mobile/src/services/api.ts
+
+# run the application
+$ npm run start
+```
 <hr>
 
 by Felipe Borges<br>

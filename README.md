@@ -1,7 +1,7 @@
 <div align="center">
-	<img src="/.github/introimg.png" alt="Intro" style="max-width:100%"/>
-	<br>
 	<h1>Ecoleta ♻️</h1>
+	<br>
+	<img src="/.github/introimg.png" alt="Intro" style="max-width:100%"/>
 </div>
 
 ## Sumary

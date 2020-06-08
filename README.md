@@ -11,15 +11,23 @@
 	<a href="#mobile-app">Mobile app</a> | 
 	<a href="#how-to-contribute">How to Contribute</a>
 </div>
-## Intro :door:
-[Back to sumary](#sumary)
 
-Intro text
+<hr<
 
-### Language
+<div align="center">
+	<h3>Intro 🚪</h3>
+</div>
+
+<h3>What is Ecoleta?</h3>
+
+<p>	Text</p>
+
+<h3>What language was used?</h3>
+
 - [TypeScript](https://www.typescriptlang.org/docs/home.html)
 
-### Main Technologies
+<h3>And the technologies?</h3>
+
 - [Node.js](https://nodejs.org/en/docs/)
 - [ReactJS](https://reactjs.org/docs/getting-started.html)
 - [React Native](https://reactnative.dev/docs/getting-started)
@@ -27,16 +35,20 @@ Intro text
 
 <hr>
 
-## API 📡
+<div align="center">
+	<h3>API 📡</h3>
+</div>
 
-### Libs
+<h3>Libs</h3>
+
 - [express]()
 - [knex]()
 - [sqlite3]()
 
-### Routes
+<h3>Routes</h3>
 
-### How to run it on your computer
+<h3>How to run it on your computer</h3>
+
 ```
 # clone this repo
 $ git clone https://github.com/felipejsborges/ecoleta.git
@@ -58,18 +70,23 @@ $ npm run dev
 ```
 <hr>
 
-## Website :computer:
-[Back to sumary](#sumary)
-### Pages
-#### Home
-#### Create Point
+<div align="center">
+	<h3>Website 💻</h3>
+</div>
 
-### Libs
+<h3>Pages</h3>
+
+- Home
+- Create Point
+
+<h3>Libs</h3>
+ 
 - [axios]()
 - [react-leaflet]()
 - [react-router-dom]()
 
-### How to run it on your computer
+<h3>How to run it on your computer</h3>
+ 
 ```
 # clone this repo
 $ git clone https://github.com/felipejsborges/ecoleta.git
@@ -87,18 +104,23 @@ $ npm run start
 ```
 <hr>
 
-## Mobile app :iphone:
-[Back to sumary](#sumary)
-### Pages
-####  Home
-####  Points
-####  Detail
+<div align="center">
+	<h3>Mobile app 📱</h3>
+</div>
 
-### Libs
- - [react-navigation]() 
- - [react-native-maps]()
+<h3>Pages</h3>
 
-### How to run it on your computer
+- Home
+- Points
+- Detail
+
+<h3>Libs</h3>
+
+- [react-navigation]() 
+- [react-native-maps]()
+
+<h3>How to run it on your computer</h3>
+
 ```
 # clone this repo
 $ git clone https://github.com/felipejsborges/ecoleta.git
@@ -114,8 +136,12 @@ $ npm install
 # run the application
 $ npm run start
 ```
+
 <hr>
-## How to contribute 💪
+
+<div align="center">
+	<h3>How to contribute 💪</h3>
+</div>
 
 <hr>
 

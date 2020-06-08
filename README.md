@@ -1,27 +1,8 @@
 <div align="center">
-	<img src="/.github/logo.png" alt="Logo" width="200px" style="max-width:100%"/>
-</div>
-
-<br>
-
-<div align="right">
-	Project developed during the <strong>Next Level Week</strong> by <g-emoji class="g-emoji" alias="rocket" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png">🚀</g-emoji><a href="https://rocketseat.com.br/">Rocketseat</a>	
-</div>
-
-<br>
-
-<div align="center">
 	<img src="/.github/introimg.png" alt="Intro" style="max-width:100%"/>
-</div>
-
-<br>
-
-
-<div align="center">
+	<br>
 	<h1>Ecoleta ♻️</h1>
 </div>
-
-<br>
 
 ## Sumary
 [Intro](#intro) :door:
@@ -39,12 +20,7 @@
 ## Intro
 [Back to sumary](#sumary)
 
-Omnistack week is an event to discover **new technologies and tools, learn new concepts and get new skills**. During this intense week, we get access to content **focused on the practice** of technologies that are used by big companies like Facebook, Netflix, Airbnb and many others. Besides having access to an **exclusive community** with Rocketseat instructors and thousands of other developers. The main technologies used in this event:
-- Node.js for back-end;
-- React.js for front-end;
-- React Native for mobile.	
-
-We developed a **website** called **BeTheHero** where an **organization could add incidents** that need financial assistance from society and a **mobile app** where people could access and see a list of the created incidents, select one and **contact the organization**. The default features were made with the Rocketseat instructor. So I decided to put to test the knowledge acquired and create new features. Let's see the entire website and mobile app features.
+Intro text
 
 <hr>
 

@@ -4,6 +4,8 @@
 	<img src="/.github/introimg.png" alt="Intro" style="max-width:100%"/>
 </div>
 
+<br>
+
 <div align="center">
 	<a href="#intro">Intro</a> | 
 	<a href="#api">API</a> | 
@@ -12,7 +14,7 @@
 	<a href="#how-to-contribute">How to Contribute</a>
 </div>
 
-<hr<
+<hr>
 
 <div align="center">
 	<h3>Intro 🚪</h3>
@@ -77,13 +79,19 @@ $ npm run dev
 <h3>Pages</h3>
 
 - Home
-- Create Point
+<img src="/.github/homewebsite.png" alt="homewebsite" width="50%" style="max-width:100%"/>
 
-<h3>Libs</h3>
+<br>
+
+- Create Point
+<img src="/.github/createpointwebsite.png" alt="createpointwebsite" width="50%" style="max-width:100%"/>
+
+<br>
+
+<h3>Main libs</h3>
  
-- [axios]()
-- [react-leaflet]()
-- [react-router-dom]()
+- [axios](https://github.com/axios/axios) to consume the API
+- [react-leaflet](https://react-leaflet.js.org/docs/en/intro) for [Leaflet](https://leafletjs.com/reference-1.6.0.html) as a React component
 
 <h3>How to run it on your computer</h3>
  
@@ -111,13 +119,24 @@ $ npm run start
 <h3>Pages</h3>
 
 - Home
+<img src="/.github/homemobile.png" alt="homemobile" width="50%" style="max-width:100%"/>
+
+<br>
+
 - Points
+<img src="/.github/pointsmobile.png" alt="pointsmobile" width="50%" style="max-width:100%"/>
+
+<br>
+
 - Detail
+<img src="/.github/detailsmobile.png" alt="detailsmobile" width="50%" style="max-width:100%"/>
+
+<br>
 
 <h3>Libs</h3>
 
-- [react-navigation]() 
-- [react-native-maps]()
+- [react-navigation](https://reactnavigation.org/docs/getting-started/) for routing and navigation
+- [react-native-maps](https://github.com/react-native-community/react-native-maps) to create a map as a component of React Native
 
 <h3>How to run it on your computer</h3>
 
@@ -142,6 +161,12 @@ $ npm run start
 <div align="center">
 	<h3>How to contribute 💪</h3>
 </div>
+
+- At first, Fork this repo
+
+- Then make your changes
+
+- Finally, send a pull request
 
 <hr>
 

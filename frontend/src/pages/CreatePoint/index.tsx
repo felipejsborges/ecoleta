@@ -52,6 +52,9 @@ const CreatePoint: React.FC = () => {
     name: '',
     email: '',
     whatsapp: '',
+    address: '',
+    number: '',
+    neighborhood: '',
   });
 
   // getting items from API
@@ -65,7 +68,7 @@ const CreatePoint: React.FC = () => {
   useEffect(() => {
     axios
       .get<IBGEUFResponse[]>(
-        'https://servicodados.ibge.gov.br/api/v1/localidades/estados',
+        'https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome',
       )
       .then((response) => {
         const ufInitials = response.data.map((uf) => uf.sigla);
@@ -130,7 +133,7 @@ const CreatePoint: React.FC = () => {
   async function handleSubmit(event: FormEvent): Promise<void> {
     event.preventDefault();
 
-    const { name, email, whatsapp } = formData;
+    const { name, email, whatsapp, address, number, neighborhood } = formData;
     const uf = selectedUf;
     const city = selectedCity;
     const [latitude, longitude] = selectedPosition;
@@ -141,6 +144,9 @@ const CreatePoint: React.FC = () => {
     data.append('name', name);
     data.append('email', email);
     data.append('whatsapp', whatsapp);
+    data.append('address', address);
+    data.append('number', number);
+    data.append('neighborhood', neighborhood);
     data.append('uf', uf);
     data.append('city', city);
     data.append('latitude', String(latitude));
@@ -181,14 +187,15 @@ const CreatePoint: React.FC = () => {
 
           <fieldset>
             <legend>
-              <h2>Dados</h2>
+              <h2>Dados da entidade</h2>
+              <span>Insira os dados da entidade</span>
             </legend>
 
             <div className="field">
               <label htmlFor="name">Nome da entidade</label>
               <input
                 type="text"
-                placeholder="Insira o nome da entidade"
+                placeholder="Digite aqui"
                 name="name"
                 id="name"
                 onChange={handleInputChange}
@@ -200,42 +207,64 @@ const CreatePoint: React.FC = () => {
                 <label htmlFor="email">E-mail</label>
                 <input
                   type="email"
-                  placeholder="Insira o e-mail da entidade"
+                  placeholder="Digite aqui"
                   name="email"
                   id="email"
                   onChange={handleInputChange}
                 />
               </div>
+              <div className="field">
+                <label htmlFor="whatsapp">WhatsApp</label>
+                <input
+                  type="text"
+                  placeholder="Digite aqui"
+                  maxLength={11}
+                  minLength={10}
+                  name="whatsapp"
+                  id="whatsapp"
+                  onChange={handleInputChange}
+                />
+              </div>
             </div>
 
+            <legend className="addressTitle">
+              <h2>Endereço</h2>
+              <span>Insira os dados do endereço</span>
+            </legend>
+
             <div className="field">
-              <label htmlFor="whatsapp">WhatsApp</label>
+              <label htmlFor="address">Logradouro</label>
               <input
                 type="text"
-                placeholder="(00) 0 0000 0000"
-                maxLength={11}
-                minLength={10}
-                name="whatsapp"
-                id="whatsapp"
+                placeholder="Digite aqui a rua/avenida/travessa"
+                name="address"
+                id="address"
                 onChange={handleInputChange}
               />
             </div>
-          </fieldset>
 
-          <fieldset>
-            <legend>
-              <h2>Endereço</h2>
-
-              <span>Selecione um endereço no mapa</span>
-            </legend>
-
-            <Map center={initialPosition} zoom={15} onClick={handleMapClick}>
-              <TileLayer
-                attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
-              <Marker position={selectedPosition} />
-            </Map>
+            <div className="field-group">
+              <div className="field">
+                <label htmlFor="number">Número</label>
+                <input
+                  type="text"
+                  placeholder="Digite aqui"
+                  name="number"
+                  id="number"
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="field">
+                <label htmlFor="neighborhood">Bairro</label>
+                <input
+                  type="text"
+                  placeholder="Digite aqui"
+                  name="neighborhood"
+                  id="neighborhood"
+                  onChange={handleInputChange}
+                />
+              </div>
+            </div>
 
             <div className="field-group">
               <div className="field">
@@ -246,7 +275,7 @@ const CreatePoint: React.FC = () => {
                   value={selectedUf}
                   onChange={handleSelectUf}
                 >
-                  <option value="0">Selecione uma UF</option>
+                  <option value="0">Selecione</option>
                   {ufs.map((uf) => (
                     <option key={uf} value={uf}>
                       {uf}
@@ -254,9 +283,7 @@ const CreatePoint: React.FC = () => {
                   ))}
                 </select>
               </div>
-            </div>
 
-            <div className="field-group">
               <div className="field">
                 <label htmlFor="city">Cidade</label>
                 <select
@@ -265,7 +292,7 @@ const CreatePoint: React.FC = () => {
                   value={selectedCity}
                   onChange={handleSelectCity}
                 >
-                  <option value="0">Selecione uma cidade</option>
+                  <option value="0">Selecione</option>
                   {cities.map((city) => (
                     <option key={city} value={city}>
                       {city}
@@ -274,6 +301,22 @@ const CreatePoint: React.FC = () => {
                 </select>
               </div>
             </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>
+              <h2>Localização</h2>
+
+              <span>Selecione um local no mapa</span>
+            </legend>
+
+            <Map center={initialPosition} zoom={15} onClick={handleMapClick}>
+              <TileLayer
+                attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <Marker position={selectedPosition} />
+            </Map>
           </fieldset>
           <fieldset>
             <legend>

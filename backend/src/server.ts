@@ -13,7 +13,7 @@ app.use(routes);
 app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
 app.use(errors()); // validation (celebrate) errors
 
-// insert the port that backend is going to run
+// insert the port that server is going to listen
 const port = 3333;
 app.listen(port);
 console.log(`Server running on port ${port} 📡`);

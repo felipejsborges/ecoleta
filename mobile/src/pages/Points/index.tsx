@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Feather as Icon } from '@expo/vector-icons';
+import Constants from 'expo-constants';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import {
   View,
@@ -57,7 +58,10 @@ const Points: React.FC = () => {
       const { status } = await Location.requestPermissionsAsync();
 
       if (status !== 'granted') {
-        Alert.alert('Precisamos de sua permissão para obter a localização');
+        Alert.alert(
+          'Alerta',
+          'Precisamos de sua permissão para obter a localização',
+        );
         return;
       }
 
@@ -128,7 +132,6 @@ const Points: React.FC = () => {
           {initialPosition[0] !== 0 && (
             <MapView
               style={styles.map}
-              loadingEnabled={initialPosition[0] === 0}
               initialRegion={{
                 latitude: initialPosition[0],
                 longitude: initialPosition[1],
@@ -151,7 +154,7 @@ const Points: React.FC = () => {
                       style={styles.mapMarkerImage}
                       source={{ uri: point.image_url }}
                     />
-                    <Text style={styles.mapMarkerTitle}>Mercado</Text>
+                    <Text style={styles.mapMarkerTitle}>{point.name}</Text>
                   </View>
                 </Marker>
               ))}
@@ -173,7 +176,7 @@ const Points: React.FC = () => {
                 styles.item,
                 selectedItems.includes(item.id) ? styles.selectedItem : {},
               ]}
-              onPress={() => handleSelectItem}
+              onPress={() => handleSelectItem(item.id)}
               activeOpacity={0.6}
             >
               <SvgUri width={42} height={42} uri={item.image_url} />
@@ -193,7 +196,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 32,
-    paddingTop: 20,
+    paddingTop: 20 + Constants.statusBarHeight,
   },
 
   title: {

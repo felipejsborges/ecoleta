@@ -30,6 +30,7 @@
 		"no-useless-constructor": "off",
 		"camelcase": "off",
 		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"import/prefer-default-export": "off",
 		"@typescript-eslint/no-unused-vars": ["error", {
 			"argsIgnorePattern": "_"
 		}],

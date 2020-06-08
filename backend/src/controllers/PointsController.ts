@@ -41,7 +41,7 @@ class PointsController {
 		const serializedPoints = points.map(point => {
 			return {
 				...point,
-				image_url: `http://localhost:3333/uploads/${point.image}`,
+				image_url: `http://192.168.0.17:3333/uploads/${point.image}`,
 			};
 		});
 
@@ -64,7 +64,7 @@ class PointsController {
 		// serializing point
 		const serializedPoint = {
 			...point,
-			image_url: `http://localhost:3333/uploads/${point.image}`,
+			image_url: `http://192.168.0.17:3333/uploads/${point.image}`,
 		};
 
 		// getting item on items table that are relationed with point_items table
@@ -84,6 +84,9 @@ class PointsController {
 			whatsapp,
 			latitude,
 			longitude,
+			address,
+			number,
+			neighborhood,
 			city,
 			uf,
 			items,
@@ -96,6 +99,9 @@ class PointsController {
 			whatsapp,
 			latitude,
 			longitude,
+			address,
+			number,
+			neighborhood,
 			city,
 			uf,
 		};

@@ -60,6 +60,10 @@
   font-size: 24px;
 }
 
+#page-create-point form .addressTitle {
+  margin-top: 32px;
+}
+
 #page-create-point form legend span {
   font-size: 14px;
   font-weight: normal;
@@ -73,7 +77,6 @@
 
 #page-create-point form .field {
   flex: 1;
-
   display: flex;
   flex-direction: column;
   margin-bottom: 24px;
@@ -227,5 +230,13 @@
 
   #page-create-point label {
     font-weight: bold;
+  }
+
+  #page-create-point form input {
+    width: 100%;
+  }
+
+  #page-create-point form select {
+    width: 100%;
   }
 }

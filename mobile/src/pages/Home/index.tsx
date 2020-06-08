@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Constants from 'expo-constants';
 import { Feather as Icon } from '@expo/vector-icons';
 import {
   View,
@@ -6,8 +7,6 @@ import {
   StyleSheet,
   Text,
   ImageBackground,
-  KeyboardAvoidingView,
-  Platform,
   Alert,
   Picker,
 } from 'react-native';
@@ -36,7 +35,7 @@ const Home: React.FC = () => {
   useEffect(() => {
     axios
       .get<IBGEUFResponse[]>(
-        'https://servicodados.ibge.gov.br/api/v1/localidades/estados',
+        'https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome',
       )
       .then((response) => {
         const ufInitials = response.data.map((uf) => uf.sigla);
@@ -70,12 +69,12 @@ const Home: React.FC = () => {
 
   function handleNavigateToPoints(): void {
     if (selectedUf === 'Selecione uma UF') {
-      Alert.alert('Insira um estado');
+      Alert.alert('Alerta!', 'Insira um estado');
       return;
     }
 
     if (selectedCity === 'Selecione uma cidade') {
-      Alert.alert('Insira uma cidade');
+      Alert.alert('Alerta!', 'Insira uma cidade');
       return;
     }
 
@@ -86,85 +85,58 @@ const Home: React.FC = () => {
   }
 
   return (
-    <KeyboardAvoidingView
-      style={{ flex: 1 }}
-      behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+    <ImageBackground
+      source={require('../../assets/home-background.png')}
+      style={styles.container}
+      imageStyle={{ width: 274, height: 368 }}
     >
-      <ImageBackground
-        source={require('../../assets/home-background.png')}
-        style={styles.container}
-        imageStyle={{ width: 274, height: 368 }}
-      >
-        <View style={styles.main}>
-          <Image source={require('../../assets/logo.png')} />
+      <View style={styles.main}>
+        <Image source={require('../../assets/logo.png')} />
 
-          <View>
-            <Text style={styles.title}>
-              Seu marketplace de coleta de resíduos
-            </Text>
+        <Text style={styles.title}>Seu marketplace de coleta de resíduos</Text>
 
-            <Text style={styles.description}>
-              Ajudamos pessoas a encotrarem pontos de coleta de forma eficiente
+        <Text style={styles.description}>
+          Ajudamos pessoas a encotrarem pontos de coleta de forma eficiente
+        </Text>
+      </View>
+
+      <View>
+        <Picker
+          style={styles.select}
+          selectedValue={selectedUf}
+          onValueChange={handleSelectUf}
+        >
+          <Picker.Item label="Selecione uma UF" value="Selecione uma UF" />
+          {ufs.map((uf) => (
+            <Picker.Item key={uf} label={uf} value={uf} />
+          ))}
+        </Picker>
+
+        <Picker
+          style={styles.select}
+          selectedValue={selectedCity}
+          onValueChange={(itemValue) => handleSelectCity(itemValue)}
+        >
+          <Picker.Item
+            label="Selecione uma cidade"
+            value="Selecione uma cidade"
+          />
+          {cities.map((city) => (
+            <Picker.Item key={city} label={city} value={city} />
+          ))}
+        </Picker>
+
+        <RectButton style={styles.button} onPress={handleNavigateToPoints}>
+          <View style={styles.buttonIcon}>
+            <Text>
+              <Icon name="arrow-right" color="#FFF" size={24} />
             </Text>
           </View>
-        </View>
 
-        <View style={styles.footer}>
-          {/* <TextInput
-            style={styles.input}
-            placeholder="Digite a UF"
-            value={uf}
-            maxLength={2}
-            autoCapitalize="characters"
-            autoCorrect={false}
-            onChangeText={setUf}
-          />
-
-          <TextInput
-            style={styles.input}
-            placeholder="Digite a cidade"
-            value={city}
-            autoCorrect={false}
-            onChangeText={setCity}
-          /> */}
-
-          <Picker
-            style={styles.input}
-            selectedValue={selectedUf}
-            onValueChange={handleSelectUf}
-          >
-            <Picker.Item label="Selecione uma UF" value="Selecione uma UF" />
-            {ufs.map((uf) => (
-              <Picker.Item key={uf} label={uf} value={uf} />
-            ))}
-          </Picker>
-
-          <Picker
-            style={styles.input}
-            selectedValue={selectedCity}
-            onValueChange={(itemValue) => handleSelectCity(itemValue)}
-          >
-            <Picker.Item
-              label="Selecione uma cidade"
-              value="Selecione uma cidade"
-            />
-            {cities.map((city) => (
-              <Picker.Item key={city} label={city} value={city} />
-            ))}
-          </Picker>
-
-          <RectButton style={styles.button} onPress={handleNavigateToPoints}>
-            <View style={styles.buttonIcon}>
-              <Text>
-                <Icon name="arrow-right" color="#FFF" size={24} />
-              </Text>
-            </View>
-
-            <Text style={styles.buttonText}>Entrar</Text>
-          </RectButton>
-        </View>
-      </ImageBackground>
-    </KeyboardAvoidingView>
+          <Text style={styles.buttonText}>Entrar</Text>
+        </RectButton>
+      </View>
+    </ImageBackground>
   );
 };
 
@@ -172,6 +144,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 32,
+    paddingTop: 20 + Constants.statusBarHeight,
   },
 
   main: {
@@ -196,14 +169,9 @@ const styles = StyleSheet.create({
     lineHeight: 24,
   },
 
-  footer: {},
-
-  select: {},
-
-  input: {
+  select: {
     height: 60,
     backgroundColor: '#FFF',
-    borderRadius: 10,
     marginBottom: 8,
     paddingHorizontal: 24,
     fontSize: 16,
@@ -225,6 +193,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0, 0, 0, 0.1)',
     justifyContent: 'center',
     alignItems: 'center',
+    borderTopLeftRadius: 10,
+    borderBottomLeftRadius: 10,
   },
 
   buttonText: {

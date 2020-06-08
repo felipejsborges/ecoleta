@@ -162,7 +162,7 @@ $ npm run start
 	<h3>How to contribute 💪</h3>
 </div>
 
-- At first, Fork this repo
+- At first, fork this repo
 
 - Then make your changes
 

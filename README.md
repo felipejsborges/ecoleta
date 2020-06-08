@@ -4,13 +4,13 @@
 	<img src="/.github/introimg.png" alt="Intro" style="max-width:100%"/>
 </div>
 
-
-[Intro](#intro) | 
-[API](#api) | 
-[Website](#website) | 
-[Mobile app](#mobile-app) | 
-[Contribute](#mobile-app)
-
+<div align="center">
+	<a href="#intro">Intro</a> | 
+	<a href="#api">API</a> | 
+	<a href="#website">Website</a> | 
+	<a href="#mobile-app">Mobile app</a> | 
+	<a href="#how-to-contribute">How to Contribute</a>
+</div>
 ## Intro :door:
 [Back to sumary](#sumary)
 

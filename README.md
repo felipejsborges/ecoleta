@@ -4,18 +4,14 @@
 	<img src="/.github/introimg.png" alt="Intro" style="max-width:100%"/>
 </div>
 
-## Sumary
-- [Intro](#intro) :door:
 
-- [API](#api) 📡
+[Intro](#intro) | 
+[API](#api) | 
+[Website](#website) | 
+[Mobile app](#mobile-app) | 
+[Contribute](#mobile-app)
 
-- [Website](#website) :computer:
-
-- [Mobile app](#mobile-app) :iphone:
-
-- [Contribute](#mobile-app) 💪
-
-## Intro
+## Intro :door:
 [Back to sumary](#sumary)
 
 Intro text
@@ -31,7 +27,7 @@ Intro text
 
 <hr>
 
-## API
+## API 📡
 
 ### Libs
 - [express]()
@@ -62,7 +58,7 @@ $ npm run dev
 ```
 <hr>
 
-## Website
+## Website :computer:
 [Back to sumary](#sumary)
 ### Pages
 #### Home
@@ -91,7 +87,7 @@ $ npm run start
 ```
 <hr>
 
-## Mobile app
+## Mobile app :iphone:
 [Back to sumary](#sumary)
 ### Pages
 ####  Home
@@ -118,6 +114,9 @@ $ npm install
 # run the application
 $ npm run start
 ```
+<hr>
+## How to contribute 💪
+
 <hr>
 
 by Felipe Borges<br>

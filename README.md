@@ -5,17 +5,15 @@
 </div>
 
 ## Sumary
-[Intro](#intro) :door:
+- [Intro](#intro) :door:
 
-[API](#api) 📡
-- [Registration and Login](#registration-and-login) :registered:
+- [API](#api) 📡
 
-[Website](#website) :computer:
-- [Registration and Login](#registration-and-login) :registered:
+- [Website](#website) :computer:
 
-[Mobile app](#mobile-app) :iphone:
-- [Main functionalities](#main-functionalities) :hammer_and_wrench:
-- [City filter system](#city-filter-system) :cityscape:
+- [Mobile app](#mobile-app) :iphone:
+
+- [Contribute](#mobile-app) 💪
 
 ## Intro
 [Back to sumary](#sumary)
@@ -33,11 +31,11 @@ Intro text
 - [Node.js](https://nodejs.org/en/docs/)
 
 ### Libs
-- ** celebrate: ** 
-- ** cors: ** 
-- ** express: ** 
-- ** knex: ** 
-- ** sqlite3: ** 
+- [celebrate]()
+- [cors]()
+- [express]()
+- [knex]()
+- [sqlite3]()
 
 ### Routes
 
@@ -58,8 +56,8 @@ npm run knex:seed
 ## Website
 [Back to sumary](#sumary)
 ### Pages
-- ** Home: ** 
-- ** Create Point: **
+#### Home
+#### Create Point
 
 ### Language
 - [TypeScript](https://www.typescriptlang.org/docs/home.html)
@@ -68,12 +66,12 @@ npm run knex:seed
 - [ReactJS](https://reactjs.org/docs/getting-started.html)
 
 ### Libs
-- ** axios: ** 
-- ** react-leaflet: ** 
-- ** react-dom: ** 
-- ** react-router-dom: ** 
-- ** react-dropzone: ** 
-- ** react-icons: ** 
+- [axios]()
+- [react-leaflet]()
+- [react-dom]()
+- [react-router-dom]()
+- [react-dropzone]()
+- [react-icons]()
 
 ### How to run it on your computer
 - Clone this repo
@@ -85,9 +83,9 @@ npm run knex:seed
 ## Mobile app
 [Back to sumary](#sumary)
 ### Pages
-- ** Home: ** 
-- ** Points: **
-- ** Detail: **
+####  Home
+####  Points
+####  Detail
 
 ### Language
 - [TypeScript](https://www.typescriptlang.org/docs/home.html)
@@ -97,12 +95,12 @@ npm run knex:seed
 - [Expo](https://docs.expo.io/)
 
 ### Libs
-- ** react-navigation: ** 
-- ** axios: ** 
-- ** expo-location": ** 
-- ** expo-mail-composer: ** 
-- ** react-native-gesture-handler: ** 
-- ** react-native-maps: **
+ - [react-navigation]()
+ - [axios]()
+ - [expo-location]()
+ - [expo-mail-composer]()
+ - [react-native-gesture-handler]()
+ - [react-native-maps]()
 
 ### How to run it on your computer
 - Clone this repo

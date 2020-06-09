@@ -76,13 +76,13 @@ $ npm run dev
 <h3>Pages</h3>
 
 - Home
-<br>
+
 <img src="/.github/homewebsite.png" alt="homewebsite" style="max-width:100%"/>
 
 <br>
 
 - Create Point
-<br>
+
 ![Create Point](/.github/createpoint.gif)
 
 <br>

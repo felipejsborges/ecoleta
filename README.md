@@ -122,12 +122,7 @@ $ npm run start
 
 <h3>Features</h3>
 
-<img src="/.github/homemobile.jpeg" alt="homemobile" width="30%" style="max-width:100%"/>
-
-<img src="/.github/pointsmobile.jpeg" alt="pointsmobile" width="30%" style="max-width:100%"/>
-
-<img src="/.github/detailsmobile.jpeg" alt="detailsmobile" width="30%" style="max-width:100%"/>
-
+![Mobile](/.github/mobile.gif)
 <br>
 
 <h3>Main libs</h3>

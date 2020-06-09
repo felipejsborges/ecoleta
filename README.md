@@ -121,6 +121,13 @@ $ npm run start
 
 <h3>Features</h3>
 
+- Filter points by city
+- Show points on map
+- Filter points by items
+- Show details of a specific point
+- Allow to contact a point by e-mail or WhatsApp
+- Open map to show directions to the point
+
 ![Mobile](/.github/mobile.gif)
 
 <h3>Main libs</h3>

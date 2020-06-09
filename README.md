@@ -76,7 +76,7 @@ $ npm run dev
 <h3>Pages</h3>
 
 - Home
-<img src="/.github/homewebsite.png" alt="homewebsite" width="50%" style="max-width:100%"/>
+<img src="/.github/homewebsite.png" alt="homewebsite" style="max-width:100%"/>
 
 <br>
 
@@ -116,17 +116,17 @@ $ npm run start
 <h3>Pages</h3>
 
 - Home
-<img src="/.github/homemobile.jpeg" alt="homemobile" width="50%" style="max-width:100%"/>
+<img src="/.github/homemobile.jpeg" alt="homemobile" width="30%" style="max-width:100%"/>
 
 <br>
 
 - Points
-<img src="/.github/pointsmobile.jpeg" alt="pointsmobile" width="50%" style="max-width:100%"/>
+<img src="/.github/pointsmobile.jpeg" alt="pointsmobile" width="30%" style="max-width:100%"/>
 
 <br>
 
 - Detail
-<img src="/.github/detailsmobile.jpeg" alt="detailsmobile" width="50%" style="max-width:100%"/>
+<img src="/.github/detailsmobile.jpeg" alt="detailsmobile" width="30%" style="max-width:100%"/>
 
 <br>
 

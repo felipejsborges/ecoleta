@@ -82,7 +82,7 @@ $ npm run dev
 
 - Create a collecting point
 
-<img src="/.github/website.gif" alt="website" width="50%" style="max-width:100%"/>
+<img src="/.github/website.gif" alt="website" align="center" style="max-width:100%"/>
 
 <h3>Responsivity</h3>
 

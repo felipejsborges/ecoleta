@@ -82,14 +82,17 @@ $ npm run dev
 
 - Create a collecting point
 
-<img src="/.github/website.gif" alt="website" align="center" style="max-width:100%"/>
-
+<div align="center">
+	<img src="/.github/website.gif" alt="website" style="max-width:100%"/>
+</div>
+	
 <h3>Responsivity</h3>
 
 - It can be accessed using a smartphone
 
-![Responsivity](/.github/responsive.gif)
-
+<div align="center">
+	<img src="/.github/responsive.gif" alt="website" style="max-width:100%"/>
+</div>
 
 <h3>Main libs</h3>
  
@@ -128,7 +131,9 @@ $ npm run start
 - Allow to contact a point by e-mail or WhatsApp
 - Open map to show directions to the point
 
-![Mobile](/.github/mobile.gif)
+<div align="center">
+	<img src="/.github/mobile.gif" alt="mobile" style="max-width:100%"/>
+</div>
 
 <h3>Main libs</h3>
 

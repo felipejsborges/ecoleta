@@ -22,18 +22,17 @@
 
 <h3>What is Ecoleta?</h3>
 
-<p>	Text</p>
+<p>	Ecoleta is a project that was developed during Next Level Week. An online event organized by Rocketseat that aims to up the career of developers by challenging them to build a complete application. We built an API, a website and a mobile application. It was created during the week of June 1st to 5th, that was also the international environment week. So we created a website where entities could register and inform what some kind of material that can't be disposed in common garbage that they are collecting, like batteries or cooking oil, for example. We also created an application where the user can access and check on the map the points registered on the webiste and locate where have one to discard some item they need. </p>
 
 <h3>What language was used?</h3>
 
-- [TypeScript](https://www.typescriptlang.org/docs/home.html)
+- [TypeScript](https://www.typescriptlang.org/docs/home.html), because it provides us a better autocomplete and reduces the chance of errors by comparing with simple JavaScript.
 
 <h3>And the technologies?</h3>
 
-- [Node.js](https://nodejs.org/en/docs/)
-- [ReactJS](https://reactjs.org/docs/getting-started.html)
-- [React Native](https://reactnative.dev/docs/getting-started)
-- [Expo](https://docs.expo.io/)
+- [Node.js](https://nodejs.org/en/docs/) for the API
+- [ReactJS](https://reactjs.org/docs/getting-started.html) for the website
+- [React Native](https://reactnative.dev/docs/getting-started) and [Expo](https://docs.expo.io/) for the mobile application
 
 <hr>
 
@@ -43,11 +42,9 @@
 
 <h3>Libs</h3>
 
-- [express]()
-- [knex]()
-- [sqlite3]()
-
-<h3>Routes</h3>
+- [express](https://expressjs.com/) as web application framework
+- [sqlite3](https://www.sqlite.org/docs.html) for database
+- [knex](http://knexjs.org/) query builder to manage the database
 
 <h3>How to run it on your computer</h3>
 
@@ -84,7 +81,7 @@ $ npm run dev
 <br>
 
 - Create Point
-<img src="/.github/createpointwebsite.png" alt="createpointwebsite" width="50%" style="max-width:100%"/>
+![Create Point](/.github/createpoint.gif)
 
 <br>
 
@@ -119,17 +116,17 @@ $ npm run start
 <h3>Pages</h3>
 
 - Home
-<img src="/.github/homemobile.png" alt="homemobile" width="50%" style="max-width:100%"/>
+<img src="/.github/homemobile.jpeg" alt="homemobile" width="50%" style="max-width:100%"/>
 
 <br>
 
 - Points
-<img src="/.github/pointsmobile.png" alt="pointsmobile" width="50%" style="max-width:100%"/>
+<img src="/.github/pointsmobile.jpeg" alt="pointsmobile" width="50%" style="max-width:100%"/>
 
 <br>
 
 - Detail
-<img src="/.github/detailsmobile.png" alt="detailsmobile" width="50%" style="max-width:100%"/>
+<img src="/.github/detailsmobile.jpeg" alt="detailsmobile" width="50%" style="max-width:100%"/>
 
 <br>
 

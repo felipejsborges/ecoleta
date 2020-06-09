@@ -27,7 +27,7 @@ const Dropzone: React.FC<Props> = ({ onFileUploaded }) => {
     [onFileUploaded],
   );
 
-  const { getRootProps, getInputProps, isDragActive } = useDropzone({
+  const { getRootProps, getInputProps } = useDropzone({
     onDrop,
     accept: 'image/*',
   });
@@ -37,16 +37,10 @@ const Dropzone: React.FC<Props> = ({ onFileUploaded }) => {
       <input {...getInputProps()} accept="image/*" />
       {selectedFileUrl ? (
         <img src={selectedFileUrl} alt="point_img" />
-      ) : isDragActive ? (
-        <p>
-          <FiUpload />
-          Solte a imagem aqui
-        </p>
       ) : (
         <p>
           <FiUpload />
-          <span>Arraste e solte aqui uma imagem do seu ponto de coleta,</span>
-          <span>ou clique para selecionar.</span>
+          <span>Clique para selecionar uma imagem do seu ponto de coleta.</span>
         </p>
       )}
     </div>

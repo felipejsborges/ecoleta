@@ -39,8 +39,8 @@ const CreatePoint: React.FC = () => {
   const [selectedFile, setSelectedFile] = useState<File>();
 
   const [initialPosition, setInitialPosition] = useState<[number, number]>([
-    -23.1848224,
-    -45.8868207,
+    -23.1742942,
+    -45.8527488,
   ]);
 
   const [selectedPosition, setSelectedPosition] = useState<[number, number]>([

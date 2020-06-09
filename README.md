@@ -118,19 +118,19 @@ $ npm run start
 <h3>Pages</h3>
 
 - Home
-<br>
+
 <img src="/.github/homemobile.jpeg" alt="homemobile" width="30%" style="max-width:100%"/>
 
 <br>
 
 - Points
-<br>
+
 <img src="/.github/pointsmobile.jpeg" alt="pointsmobile" width="30%" style="max-width:100%"/>
 
 <br>
 
 - Detail
-<br>
+
 <img src="/.github/detailsmobile.jpeg" alt="detailsmobile" width="30%" style="max-width:100%"/>
 
 <br>

@@ -10,8 +10,7 @@
 	<a href="#intro-">Intro</a>	|    
 	<a href="#api-">API</a>		|    
 	<a href="#website-">Website</a>		|    
-	<a href="#mobile-app-">Mobile app</a>	|    
-	<a href="#how-to-contribute-">How to Contribute</a>
+	<a href="#mobile-app-">Mobile app</a>	|
 </h4>
 
 <hr>
@@ -162,8 +161,6 @@ $ npm install
 # run the application
 $ npm run start
 ```
-
-<hr>
 
 <div align="right">
 	<span>Feel free to contribute 💪</span>

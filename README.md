@@ -10,7 +10,7 @@
 	<a href="#intro-">Intro</a>	|    
 	<a href="#api-">API</a>		|    
 	<a href="#website-">Website</a>		|    
-	<a href="#mobile-app-">Mobile app</a>	|
+	<a href="#mobile-app-">Mobile app</a>
 </h4>
 
 <hr>
@@ -162,11 +162,9 @@ $ npm install
 $ npm run start
 ```
 
-<div align="right">
-	<span>Feel free to contribute 💪</span>
-</div>
-
 <hr>
+
+<span>Feel free to contribute 💪</span>
 
 by Felipe Borges<br>
 [Linkedin](https://www.linkedin.com/in/felipejsborges) | [GitHub](https://github.com/felipejsborges)

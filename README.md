@@ -6,13 +6,13 @@
 
 <br>
 
-<p align="center">
+<h3 align="center">
 	<a href="#intro-">Intro</a>	|    
 	<a href="#api-">API</a>		|    
 	<a href="#website-">Website</a>		|    
 	<a href="#mobile-app-">Mobile app</a>	|    
 	<a href="#how-to-contribute-">How to Contribute</a>
-</p>
+</h3>
 
 <hr>
 

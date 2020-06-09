@@ -26,7 +26,7 @@
 
 <h3>What language was used?</h3>
 
-- [TypeScript](https://www.typescriptlang.org/docs/home.html), because it provides us a better autocomplete and reduces the chance of errors by comparing with simple JavaScript.
+We used [TypeScript](https://www.typescriptlang.org/docs/home.html), because it provides us a better autocomplete and reduces the chance of errors by comparing with simple JavaScript.
 
 <h3>And the technologies?</h3>
 

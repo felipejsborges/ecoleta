@@ -7,11 +7,11 @@
 <br>
 
 <div align="center">
-	<a href="#intro">Intro</a> | 
-	<a href="#api">API</a> | 
-	<a href="#website">Website</a> | 
-	<a href="#mobile-app">Mobile app</a> | 
-	<a href="#how-to-contribute">How to Contribute</a>
+	<a href="#intro-">Intro</a> | 
+	<a href="#api-">API</a> | 
+	<a href="#website-">Website</a> | 
+	<a href="#mobile-app-">Mobile app</a> | 
+	<a href="#how-to-contribute-">How to Contribute</a>
 </div>
 
 <hr>
@@ -40,11 +40,11 @@ We used [TypeScript](https://www.typescriptlang.org/docs/home.html), because it 
 	<h3>API 📡</h3>
 </div>
 
-<h3>Libs</h3>
+<h3>Main libs</h3>
 
-- [express](https://expressjs.com/) as web application framework
-- [sqlite3](https://www.sqlite.org/docs.html) for database
-- [knex](http://knexjs.org/) query builder to manage the database
+- [Express](https://expressjs.com/) as web application framework
+- [Sqlite3](https://www.sqlite.org/docs.html) for database
+- [Knex](http://knexjs.org/) query builder to manage the database
 
 <h3>How to run it on your computer</h3>
 
@@ -76,19 +76,21 @@ $ npm run dev
 <h3>Pages</h3>
 
 - Home
+<br>
 <img src="/.github/homewebsite.png" alt="homewebsite" style="max-width:100%"/>
 
 <br>
 
 - Create Point
+<br>
 ![Create Point](/.github/createpoint.gif)
 
 <br>
 
 <h3>Main libs</h3>
  
-- [axios](https://github.com/axios/axios) to consume the API
-- [react-leaflet](https://react-leaflet.js.org/docs/en/intro) for [Leaflet](https://leafletjs.com/reference-1.6.0.html) as a React component
+- [Axios](https://github.com/axios/axios) to consume the API
+- [React Leaflet](https://react-leaflet.js.org/docs/en/intro) for [Leaflet](https://leafletjs.com/reference-1.6.0.html) as a React component
 
 <h3>How to run it on your computer</h3>
  
@@ -116,24 +118,27 @@ $ npm run start
 <h3>Pages</h3>
 
 - Home
+<br>
 <img src="/.github/homemobile.jpeg" alt="homemobile" width="30%" style="max-width:100%"/>
 
 <br>
 
 - Points
+<br>
 <img src="/.github/pointsmobile.jpeg" alt="pointsmobile" width="30%" style="max-width:100%"/>
 
 <br>
 
 - Detail
+<br>
 <img src="/.github/detailsmobile.jpeg" alt="detailsmobile" width="30%" style="max-width:100%"/>
 
 <br>
 
-<h3>Libs</h3>
+<h3>Main libs</h3>
 
-- [react-navigation](https://reactnavigation.org/docs/getting-started/) for routing and navigation
-- [react-native-maps](https://github.com/react-native-community/react-native-maps) to create a map as a component of React Native
+- [React Navigation](https://reactnavigation.org/docs/getting-started/) for routing and navigation
+- [React Native Maps](https://github.com/react-native-community/react-native-maps) to create a map as a component of React Native
 
 <h3>How to run it on your computer</h3>
 

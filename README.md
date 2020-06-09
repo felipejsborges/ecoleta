@@ -40,7 +40,7 @@ We used [TypeScript](https://www.typescriptlang.org/docs/home.html), because it 
 </div>
 
 <h3>Routes</h3>
-- [Download here](), and import it in [Insomnia](https://insomnia.rest/)
+[Download here](), and import it in [Insomnia](https://insomnia.rest/)
 
 <h3>Main libs</h3>
 

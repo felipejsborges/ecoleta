@@ -6,13 +6,12 @@
 
 <br>
 
-<div align="center">
-	<a href="#intro">Intro</a> | 
-	<a href="#api">API</a> | 
-	<a href="#website">Website</a> | 
-	<a href="#mobile-app">Mobile app</a> | 
-	<a href="#how-to-contribute">How to Contribute</a>
-</div>
+<h4 align="center">
+	<a href="#intro-">Intro</a>	|    
+	<a href="#api-">API</a>		|    
+	<a href="#website-">Website</a>		|    
+	<a href="#mobile-app-">Mobile app</a>
+</h4>
 
 <hr>
 
@@ -26,7 +25,7 @@
 
 <h3>What language was used?</h3>
 
-- [TypeScript](https://www.typescriptlang.org/docs/home.html), because it provides us a better autocomplete and reduces the chance of errors by comparing with simple JavaScript.
+We used [TypeScript](https://www.typescriptlang.org/docs/home.html), because it provides us a better autocomplete and reduces the chance of errors by comparing with simple JavaScript.
 
 <h3>And the technologies?</h3>
 
@@ -40,13 +39,19 @@
 	<h3>API 📡</h3>
 </div>
 
-<h3>Libs</h3>
+<h3>Routes</h3>
 
-- [express](https://expressjs.com/) as web application framework
-- [sqlite3](https://www.sqlite.org/docs.html) for database
-- [knex](http://knexjs.org/) query builder to manage the database
+- [Download here](#), and import it in [Insomnia](https://insomnia.rest/)
+
+<h3>Main libs</h3>
+
+- [Express](https://expressjs.com/) as web application framework
+- [Sqlite3](https://www.sqlite.org/docs.html) for database
+- [Knex](http://knexjs.org/) query builder to manage the database
 
 <h3>How to run it on your computer</h3>
+
+- Install [Node.js](https://nodejs.org/en/download/) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), then:
 
 ```
 # clone this repo
@@ -73,22 +78,24 @@ $ npm run dev
 	<h3>Website 💻</h3>
 </div>
 
-<h3>Pages</h3>
+<h3>Features</h3>
 
-- Home
-<img src="/.github/homewebsite.png" alt="homewebsite" width="50%" style="max-width:100%"/>
+<img src="/.github/homewebsite.png" alt="homewebsite" style="max-width:100%"/>
 
 <br>
 
-- Create Point
+<h3>Responsivity</h3>
+
 ![Create Point](/.github/createpoint.gif)
 
 <br>
 
 <h3>Main libs</h3>
  
-- [axios](https://github.com/axios/axios) to consume the API
-- [react-leaflet](https://react-leaflet.js.org/docs/en/intro) for [Leaflet](https://leafletjs.com/reference-1.6.0.html) as a React component
+- [Axios](https://github.com/axios/axios) to consume the API
+- [React Leaflet](https://react-leaflet.js.org/docs/en/intro) for [Leaflet](https://leafletjs.com/reference-1.6.0.html) as a React component
+
+<br>
 
 <h3>How to run it on your computer</h3>
  
@@ -113,27 +120,22 @@ $ npm run start
 	<h3>Mobile app 📱</h3>
 </div>
 
-<h3>Pages</h3>
+<h3>Features</h3>
 
-- Home
-<img src="/.github/homemobile.jpeg" alt="homemobile" width="50%" style="max-width:100%"/>
+<img src="/.github/homemobile.jpeg" alt="homemobile" width="30%" style="max-width:100%"/>
 
-<br>
+<img src="/.github/pointsmobile.jpeg" alt="pointsmobile" width="30%" style="max-width:100%"/>
 
-- Points
-<img src="/.github/pointsmobile.jpeg" alt="pointsmobile" width="50%" style="max-width:100%"/>
+<img src="/.github/detailsmobile.jpeg" alt="detailsmobile" width="30%" style="max-width:100%"/>
 
 <br>
 
-- Detail
-<img src="/.github/detailsmobile.jpeg" alt="detailsmobile" width="50%" style="max-width:100%"/>
+<h3>Main libs</h3>
+
+- [React Navigation](https://reactnavigation.org/docs/getting-started/) for routing and navigation
+- [React Native Maps](https://github.com/react-native-community/react-native-maps) to create a map as a component of React Native
 
 <br>
-
-<h3>Libs</h3>
-
-- [react-navigation](https://reactnavigation.org/docs/getting-started/) for routing and navigation
-- [react-native-maps](https://github.com/react-native-community/react-native-maps) to create a map as a component of React Native
 
 <h3>How to run it on your computer</h3>
 
@@ -155,17 +157,7 @@ $ npm run start
 
 <hr>
 
-<div align="center">
-	<h3>How to contribute 💪</h3>
-</div>
-
-- At first, fork this repo
-
-- Then make your changes
-
-- Finally, send a pull request
-
-<hr>
+<span>Feel free to contribute 💪</span>
 
 by Felipe Borges<br>
 [Linkedin](https://www.linkedin.com/in/felipejsborges) | [GitHub](https://github.com/felipejsborges)

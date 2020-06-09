@@ -40,6 +40,9 @@ We used [TypeScript](https://www.typescriptlang.org/docs/home.html), because it 
 	<h3>API 📡</h3>
 </div>
 
+<h3>Routes</h3>
+- [Download here](), and import it in [Insomnia](https://insomnia.rest/)
+
 <h3>Main libs</h3>
 
 - [Express](https://expressjs.com/) as web application framework
@@ -47,6 +50,8 @@ We used [TypeScript](https://www.typescriptlang.org/docs/home.html), because it 
 - [Knex](http://knexjs.org/) query builder to manage the database
 
 <h3>How to run it on your computer</h3>
+
+- Install [Node.js](https://nodejs.org/en/download/) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), then:
 
 ```
 # clone this repo
@@ -160,15 +165,9 @@ $ npm run start
 
 <hr>
 
-<div align="center">
-	<h3>How to contribute 💪</h3>
+<div align="right">
+	<span>Feel free to contribute 💪</span>
 </div>
-
-- At first, fork this repo
-
-- Then make your changes
-
-- Finally, send a pull request
 
 <hr>
 

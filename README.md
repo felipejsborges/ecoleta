@@ -78,15 +78,13 @@ $ npm run dev
 	<h3>Website 💻</h3>
 </div>
 
-<h3>Pages</h3>
-
-- Features
+<h3>Features</h3>
 
 <img src="/.github/homewebsite.png" alt="homewebsite" style="max-width:100%"/>
 
 <br>
 
-- Responsivity
+<h3>Responsivity</h3>
 
 ![Create Point](/.github/createpoint.gif)
 
@@ -96,6 +94,8 @@ $ npm run dev
  
 - [Axios](https://github.com/axios/axios) to consume the API
 - [React Leaflet](https://react-leaflet.js.org/docs/en/intro) for [Leaflet](https://leafletjs.com/reference-1.6.0.html) as a React component
+
+<br>
 
 <h3>How to run it on your computer</h3>
  
@@ -120,17 +120,11 @@ $ npm run start
 	<h3>Mobile app 📱</h3>
 </div>
 
-<h3>Pages</h3>
-
-- Features
+<h3>Features</h3>
 
 <img src="/.github/homemobile.jpeg" alt="homemobile" width="30%" style="max-width:100%"/>
 
-<br>
-
 <img src="/.github/pointsmobile.jpeg" alt="pointsmobile" width="30%" style="max-width:100%"/>
-
-<br>
 
 <img src="/.github/detailsmobile.jpeg" alt="detailsmobile" width="30%" style="max-width:100%"/>
 
@@ -140,6 +134,8 @@ $ npm run start
 
 - [React Navigation](https://reactnavigation.org/docs/getting-started/) for routing and navigation
 - [React Native Maps](https://github.com/react-native-community/react-native-maps) to create a map as a component of React Native
+
+<br>
 
 <h3>How to run it on your computer</h3>
 

@@ -80,22 +80,21 @@ $ npm run dev
 
 <h3>Features</h3>
 
-![Creating point](/.github/website.gif)
+- Create a collecting point
 
-<br>
+![Creating point](/.github/website.gif)
 
 <h3>Responsivity</h3>
 
+- It can be accessed using a smartphone
+
 ![Responsivity](/.github/responsive.gif)
 
-<br>
 
 <h3>Main libs</h3>
  
 - [Axios](https://github.com/axios/axios) to consume the API
 - [React Leaflet](https://react-leaflet.js.org/docs/en/intro) for [Leaflet](https://leafletjs.com/reference-1.6.0.html) as a React component
-
-<br>
 
 <h3>How to run it on your computer</h3>
  
@@ -123,14 +122,11 @@ $ npm run start
 <h3>Features</h3>
 
 ![Mobile](/.github/mobile.gif)
-<br>
 
 <h3>Main libs</h3>
 
 - [React Navigation](https://reactnavigation.org/docs/getting-started/) for routing and navigation
 - [React Native Maps](https://github.com/react-native-community/react-native-maps) to create a map as a component of React Native
-
-<br>
 
 <h3>How to run it on your computer</h3>
 

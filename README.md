@@ -21,7 +21,7 @@
 
 <h3>What is Ecoleta?</h3>
 
-<p>	Ecoleta is a project that was developed during Next Level Week. An online event organized by Rocketseat that aims to up the career of developers by challenging them to build a complete application. We built an API, a website and a mobile application. It was created during the week of June 1st to 5th, that was also the international environment week. So we created a website where entities could register and inform what some kind of material that can't be disposed in common garbage that they are collecting, like batteries or cooking oil, for example. We also created an application where the user can access and check on the map the points registered on the webiste and locate where have one to discard some item they need. </p>
+Ecoleta is a project that was developed during **Next Level Week**. An online event organized by [Rocketseat](https://rocketseat.com.br/) that aims to **up the career of developers** by challenging them to build a **complete application**. We built an API, a website and a mobile application. June 5th was also the **international environment day**. So we created a website where entities could register and inform what some **kind of material that can't be disposed in common garbage** that they are collecting, like batteries or cooking oil, for example. We also created an application where the user can access and **check on the map the points registered on the webiste** and locate where have one to discard some item they need.
 
 <h3>What language was used?</h3>
 
@@ -82,7 +82,7 @@ $ npm run dev
 
 - Create a collecting point
 
-![Creating point](/.github/website.gif)
+<img src="/.github/website.gif" alt="website" width="50%" style="max-width:100%"/>
 
 <h3>Responsivity</h3>
 
